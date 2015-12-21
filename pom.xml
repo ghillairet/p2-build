@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.ghillairet</groupId>
+    <artifactId>p2-build</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>emfjson-p2-build</module>
+    </modules>
+
+    <properties>
+        <emfjson-version>0.14.0-SNAPSHOT</emfjson-version>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.reficio</groupId>
+                    <artifactId>p2-maven-plugin</artifactId>
+                    <version>1.2.0-SNAPSHOT</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>p2-maven</id>
+            <url>http://repo.reficio.org/maven/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
